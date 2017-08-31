@@ -7,6 +7,7 @@ Write-Host "PowerShell Version:" $PSVersionTable.PSVersion.tostring()
 # dependencies
 Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null
 
+# Install latest
 Install-Module -Name PowerShellGet -Force
 Import-Module -Name PowerShellGet -Force
 
