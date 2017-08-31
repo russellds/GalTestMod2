@@ -1,6 +1,8 @@
 ﻿param(
     $Task = 'Default'
 )
+# Get Powershell Host Version
+Write-Host "PowerShell Version:" $PSVersionTable.PSVersion.tostring()
 
 # dependencies
 Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null
