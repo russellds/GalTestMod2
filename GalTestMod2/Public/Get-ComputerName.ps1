@@ -1,4 +1,4 @@
 function Get-ComputerName {
-    # Return ComputerName
+    # Return ComputerName2
     $env:COMPUTERNAME
 }
