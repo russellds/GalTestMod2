@@ -4,6 +4,9 @@
 # Get Powershell Host Version
 Write-Host "PowerShell Version:" $PSVersionTable.PSVersion.tostring()
 
+# Get PowerShellGet Version
+Write-Host "PowerShellGet Version:" $(Get-Module -Name PowerShelGet).Version
+
 # dependencies
 Get-PackageProvider -Name NuGet -ForceBootstrap | Out-Null
 if(-not (Get-Module -ListAvailable PSDepend))
