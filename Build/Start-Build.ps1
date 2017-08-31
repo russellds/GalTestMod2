@@ -4,6 +4,9 @@
 # Get Powershell Host Version
 Write-Host "PowerShell Version:" $PSVersionTable.PSVersion.tostring()
 
+Update-Module -Name PowerShellGet -Force
+Import-Module -Name PowerShellGet -Force
+
 # Get PowerShellGet Version
 Write-Host "PowerShellGet Version:" $(Get-Module -Name PowerShelGet).Version
 
